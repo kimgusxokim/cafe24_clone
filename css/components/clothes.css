@@ -1,0 +1,93 @@
+.main__clothes {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__clothes-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.main__clothes-title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.main__clothes-title-new {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.main__clothes-title-description {
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.main__clothes_container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 0fr);
+    gap: 50px 20px;
+    padding: 100px 40px;
+}
+
+.main__clothes_container-box {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    width: 330px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.main__clothes_container-box:hover {
+    cursor: pointer;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;;
+}
+
+.main__clothes_container-box:hover .main__clothes_image {
+    transform: scale(1.1);
+}
+
+.main__clothes_image-box {
+    width: 330px;
+    height: 500px;
+    overflow: hidden;
+}
+
+
+.main__clothes_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.main__clothes_description-box {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding: 15px;
+}
+
+.main__clothes-price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.main__clothes-description {
+    font-size: 13px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.main__clothes_price-tag {
+    font-size: 14px;
+    font-weight: 600;
+    color: black
+}
+

@@ -1,0 +1,139 @@
+.header {
+    height: 20vh;
+    /* border: 1px solid red; */
+}
+
+/* 헤더 상단 */
+.header__top {
+    display: flex;
+    position: relative;
+    height: 12vh;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header__nav-box {
+    width: 33%;
+}
+
+.header__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 600;
+    /* border: 1px solid blue; */
+}
+
+.header__list-box {
+    display: flex;
+    height: 100%;
+        /* border: 1px solid red; */
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    width: 33%;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+
+.header__content {
+    margin: 0 15px;
+    /* border: 1px solid red; */
+}
+
+.header__content a {
+    color: black;
+}
+
+/* 헤더 하단 */
+.header__bottom {
+    display: flex;
+    height: 8vh;
+    justify-content: center;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+
+.header__bottom_nav-box {
+    display: flex;
+    align-items: center;
+}
+
+.header__category {
+    display: flex;
+    /* border: 1px solid blue; */
+}
+
+.header__cart-badge {
+    /* border: 1px solid blue; */
+    background-color: #b00000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    position: absolute;
+    top: -1px;
+    right: -4px;
+}
+
+.header__content--badge-box {
+    position: relative;
+}
+
+.header__cart-badge span {
+    font-size: 11px;
+    color: white;
+}
+
+.header__content--point-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header__point-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid green; */
+    background-color: #d7d7d7;
+    width: 41px;
+    height: 16px;
+    top: 30px;
+    border-radius: 4px;
+    z-index: 1;
+    
+}
+
+.header__point-box::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 10px solid #d7d7d7;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 0;
+    z-index: -1;
+}
+
+.header__point-box span {
+    font-size: 8px;
+    color: white
+}
+
+.header__content a {
+    text-decoration: none;
+}
